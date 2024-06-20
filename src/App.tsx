@@ -1,13 +1,16 @@
 import "./index.css";
+import "./App.css";
+import HomePage from "./pages/HomePage/HomePage";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <section id="home" className="hero bg-primary">
-      <div className="hero-content">
-        <h2 className="text-secondary">Reach Your Full Potential</h2>
-        <p>Professional basketball training to enhance your skills and performance.</p>
-      </div>
-    </section>
+    <>
+      <Navbar />
+      <HomePage />
+      <Footer />
+    </>
   );
 }
 

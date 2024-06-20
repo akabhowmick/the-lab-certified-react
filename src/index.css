@@ -5,7 +5,7 @@
   --accent-color: #000000;
   --background-color: #d1d1d1;
   --text-color: #14212e;
-  --heading-color: #fafafa;
+  --heading-color: #121212;
 }
 /* Dallas Mavericks colors: #00538C for royal blue, #002B5E for navy blue, #B8C4CA for silver, and #000000 for black */
 
@@ -14,82 +14,93 @@ body {
   font-family: Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-color);
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  font-weight: 600;
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em 0;
+  text-align: center;
 }
 
-h1 {
-  font-size: 2.5em;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: auto;
 }
 
 h2 {
-  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-h3 {
-  font-size: 1.75em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-h6 {
-  font-size: 1em;
-}
-
-/* Unordered List */
 ul {
   list-style-type: disc;
   margin: 1em 0;
   padding-left: 1.5em;
 }
 
-/* List Items */
 li {
   margin-bottom: 0.5em;
   line-height: 1.5em;
 }
 
-/* Additional utility classes */
-.text-primary {
-  color: var(--primary-color);
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.text-secondary {
-  color: var(--primary-color);
+label {
+  margin-bottom: 0.5em;
+  color: var(--heading-color);
 }
 
-.text-accent {
-  color: var(--accent-color);
+input,
+textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid var(--heading-color);
+  border-radius: 5px;
 }
 
-.bg-primary {
-  background-color: var(--primary-color);
+button {
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
 }
 
-.bg-secondary {
-  background-color: var(--secondary-color);
+footer {
+  background-color: black;
   color: white;
+  text-align: center;
+  padding: 1em 0;
 }
 
-.bg-accent {
-  background-color: var(--accent-color);
-  color: white;
+.plans-subheader {
+  margin: 0 auto;
 }
