@@ -1,72 +1,20 @@
-import "./Events.css";
+// src/components/EventsList.tsx
+import React from "react";
+import { Event } from "./EventsInfo";
+import { EventItem } from "./EventItem";
 
-export const EventsList = () => {
-  return (
-    <>
-        <h1>Sign Up Here!</h1>
-    <h2>Upcoming Events</h2>
-    <div className="container">
-      <ul className="cardElements">
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-
-        <li className="eventCard">
-          <img src="#" alt="Schedule with Background" />
-          <p>
-            Summer Camp Special<br />
-            Session 1
-          </p>
-          <span>Date Location</span>
-          <button>Buy Tickets</button>
-        </li>
-      </ul>
-    </div></>
-  )
+interface EventsListProps {
+  events: Event[];
 }
 
-  
- 
+const EventsList: React.FC<EventsListProps> = ({ events }) => {
+  return (
+    <div className="events-list">
+      {events.map((event) => (
+        <EventItem key={event.id} event={event} />
+      ))}
+    </div>
+  );
+};
 
+export default EventsList;
