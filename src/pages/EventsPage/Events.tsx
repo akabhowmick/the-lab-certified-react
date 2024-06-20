@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Events.css";
 import { events } from './EventsInfo';
 import EventsList from './EventsList';
 
