@@ -1,0 +1,28 @@
+.black-bar{
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    margin-top: -10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(171, 171, 171);;
+}
+
+ul li {
+    display: inline;
+    padding: 0 20px;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.form-info{
+    display: flex;
+}
+
+.waiver-box{display: flex;}
