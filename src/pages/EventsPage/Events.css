@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+p#tagLine {
+  color: red;
+  font-size: 1.5rem;
+}
+p#lifeLine {
+  font-size: 1.25rem;
+}
+.container {
+  display: block;
+  box-shadow: 2px 2px 8px;
+}
+.cardContainer {
+  align-content: center;
+  margin-left: 15rem;
+}
+ul.cardElements {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  width: 75%;
+}
+.eventCard {
+  border: 1px solid var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px;
+}
+li.eventCard h5 {
+  color: black;
+}
+button {
+  background-color: var(--primary-color);
+  margin: 2rem;
+  width: 10rem;
+  height: 3rem;
+  color: var(--heading-color);
+}
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+img.picked {
+  width: 75%;
+  box-shadow: 2px 2px 8px;
+}
+.container {
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  display: flex;
+  font-size: 1.5rem;
+}
+.fa-brands {
+  opacity: 0.7;
+}
+.fa-brands:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3;
+}
+address {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

@@ -1,37 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events Lists</title>
-    <link rel="stylesheet" href="../events.css">
-  </head>
-  <body>
-    <!-- Navigation Top Bar -->
-    <nav class="navbar nav">
-      <div class="container">
-        <a href="#">Home</a>
-        <a href="#">Events</a>
-        <a href="#">In-Person Training</a>
-        <a href="#">Free Session</a>
-        <!-- Optional DropDown -->
-        <div class="dropDown">
-          <span>More</span>
-          <a href="#">Page1</a>
-          <a href="#">Page1</a>
-          <a href="#">Page1</a>
-          <a href="#">Page1</a>
-        </div>
-      </div>
-    </nav>
-    <!-- Page Title -->
-    <h1>Sign Up Here!</h1>
+import "./Events.css";
+
+export const EventsList = () => {
+  return (
+    <>
+        <h1>Sign Up Here!</h1>
     <h2>Upcoming Events</h2>
-    <!-- Container for Cards-->
-    <div class="container">
-      <ul class="cardElements">
-        <!--Card-->
-        <li class="eventCard">
+    <div className="container">
+      <ul className="cardElements">
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -40,8 +16,7 @@
           <span>Date Location</span>
           <button>Buy Tickets</button>
         </li>
-        <!--Card-->
-        <li class="eventCard">
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -50,8 +25,7 @@
           <span>Date Location</span>
           <button>Buy Tickets</button>
         </li>
-        <!--Card-->
-        <li class="eventCard">
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -60,8 +34,7 @@
           <span>Date Location</span>
           <button>Buy Tickets</button>
         </li>
-        <!--Card-->
-        <li class="eventCard">
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -70,8 +43,7 @@
           <span>Date Location</span>
           <button>Buy Tickets</button>
         </li>
-        <!--Card-->
-        <li class="eventCard">
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -80,8 +52,8 @@
           <span>Date Location</span>
           <button>Buy Tickets</button>
         </li>
-        <!--Card-->
-        <li class="eventCard">
+
+        <li className="eventCard">
           <img src="#" alt="Schedule with Background" />
           <p>
             Summer Camp Special<br />
@@ -91,9 +63,10 @@
           <button>Buy Tickets</button>
         </li>
       </ul>
-    </div>
-    <footer>
-      <p>Copyright 2024</p>
-    </footer>
-  </body>
-</html>
+    </div></>
+  )
+}
+
+  
+ 
+
