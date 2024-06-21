@@ -10,7 +10,7 @@ const links = [
   { name: "Events", path: "/events" },
   { name: "Free Session", path: "/free-session" },
   { name: "In-Person Training", path: "/in-person-training" },
-  { name: "More", path: "/" },
+  { name: "Testimonials", path: "/testimonials" },
 ];
 
 // const dropDownMenuLink = [

@@ -13,6 +13,7 @@ import { FreeSession } from "./pages/FreeSession/FreeSession";
 import { Navbar } from "./components/navbar/Navbar";
 import { InPersonTraining } from "./pages/InPersonTrainingPage/InPersonTraining";
 import { Events } from "./pages/EventsPage/Events";
+import { Testimonials } from "./pages/Testimonials/Testimonials";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="events" element={<Events />} />
       <Route path="free-session" element={<FreeSession />} />
       <Route path="in-person-training" element={<InPersonTraining />} />
+      <Route path="testimonials" element={<Testimonials />} />
       <Route path="*" element={<HomePage />} />
     </Route>
   )
