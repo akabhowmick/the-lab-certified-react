@@ -26,6 +26,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "reactjs-availability-calendar": "^1.1.7",
+    "rsuite": "^5.64.2",
     "styled-components": "^6.1.11",
     "yup": "^1.4.0"
   },

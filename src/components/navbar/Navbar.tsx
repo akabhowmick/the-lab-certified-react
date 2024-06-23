@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.png";
-
+import { ButtonToolbar, Dropdown } from "rsuite";
 import "./Navbar.css";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -13,12 +13,18 @@ const links = [
   { name: "Testimonials", path: "/testimonials" },
 ];
 
-// const dropDownMenuLink = [
-//   { name: "E-Waiver", path: "/events" },
-//   { name: "Free Session", path: "/free-session" },
-//   { name: "In-Person Training", path: "/in-person-training" },
-//   { name: "More", path: "/" },
-// ];
+// multi level navigation
+const CustomDropdown = ({ ...props }) => (
+  <Dropdown {...props}>
+    <Dropdown.Item>New File</Dropdown.Item>
+    <Dropdown.Item>New File with Current Profile</Dropdown.Item>
+    <Dropdown.Item>Download As...</Dropdown.Item>
+    <Dropdown.Item>Export PDF</Dropdown.Item>
+    <Dropdown.Item>Export HTML</Dropdown.Item>
+    <Dropdown.Item>Settings</Dropdown.Item>
+    <Dropdown.Item>About</Dropdown.Item>
+  </Dropdown>
+);
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -61,6 +67,9 @@ export const Navbar = () => {
                 <ul>{linksWithNavLink}</ul>
               </div>
             )}
+            <ButtonToolbar>
+              <CustomDropdown title="Click and Hover" trigger={["click", "hover"]} />
+            </ButtonToolbar>
 
             <NavLink
               onClick={() => setShowNavbar(false)}
