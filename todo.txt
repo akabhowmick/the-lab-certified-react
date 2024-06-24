@@ -1,0 +1,20 @@
+Frontend: 
+1. Programs 
+  => use carousels to recreate all the programs
+2. Schedule - To be done with Upper Hand (?) 
+3. Home 
+  => fix fonts and the remove random tables 
+4. Navbar
+  => include a dropdown and all the pages 
+5. Footer 
+  => replace links
+6. Testimonials + success page 
+7. Profile Page
+8. Refactor => later 
+9. Login Page
+
+
+Backend: 
+1. Login + Auth => Supabase with the coding email 
+2. Implement a table of events + dates for attendance 
+3. Subscription email setup

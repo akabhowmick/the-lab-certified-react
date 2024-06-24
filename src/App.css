@@ -510,58 +510,6 @@
     }
   }
 
-  @layer animation.scroll-driven.active-link {
-    body {
-      timeline-scope: --home, --schedules, --plans, --about;
-    }
-
-    #home {
-      view-timeline-name: --home;
-    }
-
-    #schedules {
-      view-timeline-name: --schedules;
-    }
-    #plans {
-      view-timeline-name: --plans;
-    }
-
-    #about {
-      view-timeline-name: --about;
-    }
-
-    .NavLink[href="#"] {
-      animation-timeline: --home;
-    }
-
-    .NavLink[href="#schedules"] {
-      animation-timeline: --schedules;
-    }
-
-    .NavLink[href="#plans"] {
-      animation-timeline: --plans;
-    }
-
-    .NavLink[href="#about"] {
-      animation-timeline: --about;
-    }
-
-    .NavLink {
-      animation: highlight linear both;
-    }
-
-    @keyframes highlight {
-      0%,
-      100% {
-        color: white;
-      }
-      30%,
-      70% {
-        color: hsl(349 100% 58%);
-      }
-    }
-  }
-
   @layer animation.navbar.sm-screen {
     body:has(.menu.open) {
       overflow-y: hidden;

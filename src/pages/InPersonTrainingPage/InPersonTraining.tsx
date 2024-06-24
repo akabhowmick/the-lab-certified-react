@@ -1,24 +1,18 @@
-import "./InPersonTraining.css";
-import Calendar from "reactjs-availability-calendar";
+import "rsuite/dist/rsuite.min.css";
+import { Calendar } from "rsuite";
 
 export const InPersonTraining = () => {
-  const bookings = [
-    {
-      from: new Date("2022-07-03"),
-      to: new Date("2022-07-30"),
-      middayCheckout: true,
-    },
-    {
-      from: "2022-04-08",
-      to: "2022-04-13",
-      middayCheckout: true,
-    },
-    {
-      from: "2022-09-03T19:20:35.593Z",
-      to: "2022-09-22T19:20:35.593Z",
-      middayCheckout: false,
-    },
-  ];
-
-  return <Calendar bookings={bookings} />;
+  return (
+    <div
+      className="training-container WeekPicker"
+      style={{
+        display: "block",
+        width: 600,
+        paddingLeft: 30,
+      }}
+    >
+      <h4>React Suite Calendar Component</h4>
+      <Calendar />
+    </div>
+  );
 };
