@@ -1,12 +1,12 @@
 import { User } from "@supabase/supabase-js";
 import { useState, useEffect, createContext, useContext, ReactNode } from "react";
 import Swal from "sweetalert2";
-import { signOutUserSupabase } from "../api/QuizAuthRequests/LogoutUser";
-import { signInUserSupabase } from "../api/QuizAuthRequests/SignInUser";
-import { signUpUserSupabase } from "../api/QuizAuthRequests/SignUpUser";
-import { updateUserSupabase } from "../api/QuizAuthRequests/UpdateUser";
-import { supabase } from "../api/supabase-requests";
+import { signInUserSupabase } from "../api/LabAuthRequests/SignInUser";
+import { signUpUserSupabase } from "../api/LabAuthRequests/SignUpUser";
+import { updateUserSupabase } from "../api/LabAuthRequests/UpdateUser";
 import { UserSignIn } from "../types/interfaces";
+import { supabase } from "../api/supabase-requests";
+import { signOutUserSupabase } from "../api/LabAuthRequests/LogoutUser";
 
 interface AuthContextType {
   user: User | null;
