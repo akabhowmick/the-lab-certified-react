@@ -222,11 +222,6 @@
       gap: calc(var(--gap) / 2);
     }
 
-    & tr:hover td {
-      color: var(--brand-1);
-      background-color: white;
-    }
-
     @media (width > 768px) {
       .container {
         grid-template-columns: 1fr 1fr;
@@ -310,17 +305,11 @@
 
     & i {
       font-size: var(--font-size-5);
-
-      /* VisBug ♥ */
       margin-inline-start: var(--size-00);
     }
 
     & li {
       text-wrap: balance;
-    }
-
-    &:hover {
-      background-color: hsl(0, 0%, 33%);
     }
   }
 

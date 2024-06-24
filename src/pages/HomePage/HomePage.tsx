@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Hero from "./HomePageComponents/Hero";
-import Schedules from "./HomePageComponents/Schedules";
 import Plans from "./HomePageComponents/Plans";
 const App: React.FC = () => {
   const lastScrollTop = useRef(0);
@@ -88,7 +87,6 @@ const App: React.FC = () => {
     <div>
       <main>
         <Hero />
-        <Schedules />
         <Plans />
       </main>
     </div>

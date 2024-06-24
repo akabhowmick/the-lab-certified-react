@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           </picture>
         </div>
         <div className="content">
-          <h1>Good Morning Champ</h1>
+          <h1 className="text-white text-8xl">Good Morning Champ</h1>
           <div className="wrapper">
             <a href="#discover" className="LinkButton Primary">
               {" "}

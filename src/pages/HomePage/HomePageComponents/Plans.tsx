@@ -47,9 +47,8 @@ const Plans: React.FC = () => {
   return (
     <section id="plans" className="cards">
       <div className="subject">
-      <h2 className="plans-subheader">Why Choose Us?</h2>
+      <h2 className="plans-subheader text-white underline p-4">Why Choose Us?</h2>
         <div className="container">
-         
           {cardInfo}
         </div>
       </div>
