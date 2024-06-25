@@ -1,4 +1,5 @@
 import { Program } from "../../types/interfaces";
+import { programPicture1, programPicture10, programPicture11, programPicture12, programPicture2, programPicture3, programPicture4, programPicture5, programPicture6, programPicture7, programPicture8, programPicture9 } from "../../utils/pictureInfo";
 
 export const groupProgramList: Program[] = [
   {
@@ -8,7 +9,7 @@ export const groupProgramList: Program[] = [
     price: 300,
     formattedPrice: "$300/month",
     numberOfSessions: 1,
-    image: "",
+    image: programPicture8,
   },
   {
     coach: "Middle School Subscription",
@@ -17,7 +18,7 @@ export const groupProgramList: Program[] = [
     price: 300,
     formattedPrice: "$300/month",
     numberOfSessions: 1,
-    image: "",
+    image: programPicture9,
   },
   {
     coach: "High School Subscription",
@@ -26,7 +27,7 @@ export const groupProgramList: Program[] = [
     price: 300,
     formattedPrice: "$300/month",
     numberOfSessions: 1,
-    image: "",
+    image: programPicture10,
   },
 ];
 
@@ -38,7 +39,7 @@ export const privateProgramList: Program[] = [
     price: 425,
     formattedPrice: "$425",
     numberOfSessions: 5,
-    image: "",
+    image: programPicture11,
   },
   {
     coach: "Curtis",
@@ -47,7 +48,7 @@ export const privateProgramList: Program[] = [
     price: 300,
     formattedPrice: "$300",
     numberOfSessions: 5,
-    image: "",
+    image: programPicture12,
   },
   {
     coach: "Private Training",
@@ -56,7 +57,7 @@ export const privateProgramList: Program[] = [
     price: 425,
     formattedPrice: "$425",
     numberOfSessions: 5,
-    image: "",
+    image: programPicture1 ,
   },
   {
     coach: "Curtis",
@@ -65,7 +66,7 @@ export const privateProgramList: Program[] = [
     price: 300,
     formattedPrice: "$300",
     numberOfSessions: 5,
-    image: "",
+    image: programPicture2,
   },
 
   {
@@ -75,7 +76,7 @@ export const privateProgramList: Program[] = [
     price: 750,
     formattedPrice: "$750",
     numberOfSessions: 10,
-    image: "",
+    image: programPicture3,
   },
   {
     coach: "Curtis",
@@ -84,7 +85,7 @@ export const privateProgramList: Program[] = [
     price: 100,
     formattedPrice: "$100",
     numberOfSessions: 10,
-    image: "",
+    image: programPicture4,
   },
   {
     coach: "Private Training",
@@ -93,7 +94,7 @@ export const privateProgramList: Program[] = [
     price: 750,
     formattedPrice: "$750",
     numberOfSessions: 10,
-    image: "",
+    image: programPicture5,
   },
   {
     coach: "College",
@@ -102,7 +103,7 @@ export const privateProgramList: Program[] = [
     price: 1300,
     formattedPrice: "$1300",
     numberOfSessions: 20,
-    image: "",
+    image: programPicture6,
   },
   {
     coach: "Curtis",
@@ -111,6 +112,6 @@ export const privateProgramList: Program[] = [
     price: 800,
     formattedPrice: "$800",
     numberOfSessions: 20,
-    image: "",
+    image: programPicture7,
   },
 ];
