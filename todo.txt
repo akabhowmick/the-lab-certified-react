@@ -1,7 +1,5 @@
 Frontend: (today)
 1. Schedule - To be done with Upper Hand (?) 
-2. Booking 
-  => coming from the calendar page 
 
 Backend: (tomorrow)
 1. Login + Auth => 

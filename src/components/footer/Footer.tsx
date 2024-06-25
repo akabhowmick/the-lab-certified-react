@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <img src="src/assets/logo.png" className="h-8 me-3" alt="FlowBite Logo" />
+              <img src="public/logo.png" className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                 The Lab
               </span>
