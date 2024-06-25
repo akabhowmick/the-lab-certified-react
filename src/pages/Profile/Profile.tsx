@@ -1,15 +1,24 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { siteLogo } from "../../utils/pictureInfo";
+import { useAuthContext } from "../../providers/auth-provider";
 
 interface UserProfileProps {}
 
 export const Profile: React.FC<UserProfileProps> = () => {
   const navigate = useNavigate();
+  const { logOutUser } = useAuthContext();
   useEffect(() => {
     if (!localStorage.getItem("user")) {
       navigate("/login");
     }
   }, [navigate]);
+
+  const handleLogoutBtn = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    logOutUser();
+    navigate("/login");
+  };
 
   const user = {
     name: "John Doe",
@@ -17,14 +26,21 @@ export const Profile: React.FC<UserProfileProps> = () => {
     avatarUrl: "https://via.placeholder.com/150", // Placeholder image URL
   };
 
-  const { name, email, avatarUrl } = user;
+  const { name, email } = user;
 
   return (
     <div style={styles.container}>
       <div style={styles.profileCard}>
-        <img src={avatarUrl} alt="User Avatar" style={styles.avatar} />
+        <img src={siteLogo} alt="User Avatar" style={styles.avatar} />
         <h1 style={styles.name}>{name}</h1>
         <p style={styles.email}>{email}</p>
+        <button
+          type="submit"
+          onClick={(e) => handleLogoutBtn(e)}
+          className="w-full text-white bg-red-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        >
+          Logout
+        </button>
       </div>
     </div>
   );
