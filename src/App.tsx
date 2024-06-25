@@ -1,6 +1,7 @@
 import "./index.css";
 import "./App.css";
 import "./App.css";
+import ScrollToTop from "react-scroll-to-top";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ScrollToTop smooth />
       <Footer />
     </>
   );
