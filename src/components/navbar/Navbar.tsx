@@ -8,7 +8,6 @@ import { NavUnlisted } from "./NavbarStyles";
 const links = [
   { name: "Home", path: "/" },
   { name: "Contact", path: "/contact" },
-  { name: "Events", path: "/programs" },
   { name: "Programs", path: "/programs" },
   { name: "Profile", path: "/profile" },
   { name: "Services", path: "/services" },

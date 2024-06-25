@@ -1,5 +1,6 @@
 import "./Services.css";
 import { CustomCalendar } from "./Calendar";
+import { basketballBackground } from "../../utils/pictureInfo";
 
 export const Services = () => {
   return (
@@ -8,11 +9,7 @@ export const Services = () => {
         <div className="hero">
           <div className="visual">
             <picture>
-              <source
-                srcSet="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero.webp"
-                type="image/avif"
-                media="(width > 1024px)"
-              />
+              <source srcSet={basketballBackground} type="image/avif" media="(width > 1024px)" />
               <source
                 srcSet="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero-mobile.avif"
                 type="image/avif"

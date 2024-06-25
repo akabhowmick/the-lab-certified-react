@@ -11,6 +11,8 @@ import picture9 from "../assets/person/6I2A9499.jpg";
 import picture10 from "../assets/person/6I2A9504.jpg";
 import picture11 from "../assets/person/6I2A9515.jpg";
 import picture12 from "../assets/person/6I2A9560.jpg";
+import picture13 from "../assets/basketball.jpg";
+
 
 export const siteLogo = logo;
 export const programPicture1 = picture1;
@@ -25,3 +27,4 @@ export const programPicture9 = picture9;
 export const programPicture10 = picture10;
 export const programPicture11 = picture11;
 export const programPicture12 = picture12;
+export const basketballBackground = picture13; 
