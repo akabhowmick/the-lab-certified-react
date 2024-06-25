@@ -14,13 +14,15 @@ export const Booking = () => {
             <div className="flex flex-col rounded-lg bg-white sm:flex-row">
               <img
                 className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src="src/assets/logo.png"
                 alt=""
               />
               <div className="flex w-full flex-col px-4 py-4">
-                <span className="font-semibold">Nike Air Max Pro 8888 - Super Light</span>
-                <span className="float-right text-gray-400">42EU - 8.5US</span>
-                <p className="mt-auto text-lg font-bold">$238.99</p>
+                <span className="font-semibold">Private Coaching (Program Type Selected) </span>
+                <span className="float-right text-gray-400">
+                  June 25th, 2024 (Program Date Selected)
+                </span>
+                <p className="mt-auto text-lg font-bold">$300 (Program price)</p>
               </div>
             </div>
           </div>
@@ -161,16 +163,16 @@ export const Booking = () => {
             <div className="mt-6 border-t border-b py-2">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Subtotal</p>
-                <p className="font-semibold text-gray-900">$399.00</p>
+                <p className="font-semibold text-gray-900">$300.00</p>
               </div>
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900">Taxes</p>
-                <p className="font-semibold text-gray-900">$8.00</p>
+                <p className="font-semibold text-gray-900">$26.25</p>
               </div>
             </div>
             <div className="mt-6 flex items-center justify-between">
               <p className="text-sm font-medium text-gray-900">Total</p>
-              <p className="text-2xl font-semibold text-gray-900">$408.00</p>
+              <p className="text-2xl font-semibold text-gray-900">$326.25</p>
             </div>
           </div>
           <button className="mt-4 mb-8 w-full rounded-md bg-gray-900 px-6 py-3 font-medium text-white">

@@ -37,7 +37,7 @@ export const ProgramCard = ({ program }: { program: Program }) => {
               </p>
               <div className="ml-auto">
                 <button className="bg-red-500 p-2 mt-2 text-lg font-semibold text-white rounded-lg">
-                  Book Now!
+                  <a href="/booking">Book Now!</a>
                 </button>
               </div>
             </div>

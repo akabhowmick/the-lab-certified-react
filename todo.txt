@@ -8,7 +8,6 @@ Backend: (tomorrow)
 2. Implement a table of events + dates for attendance 
 3. Subscription email setup
 
-
 Supabase : 
 anon eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkyODAxOTQsImV4cCI6MjAzNDg1NjE5NH0.O51bcHwBsMCn1VwpO9IoE9ZPMHgqdKMojE1UZx8UuKc
 
