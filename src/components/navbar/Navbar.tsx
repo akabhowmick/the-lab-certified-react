@@ -9,7 +9,7 @@ import { NavUnlisted } from "./NavbarStyles";
 const links = [
   { name: "Login", path: "/login" },
   { name: "Programs", path: "/programs" },
-  { name: "In-Person Training", path: "/in-person-training" },
+  { name: "Services", path: "/services" },
   { name: "Testimonials", path: "/testimonials" },
 ];
 

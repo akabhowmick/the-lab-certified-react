@@ -10,13 +10,14 @@ import {
 import HomePage from "./pages/HomePage/HomePage";
 import Footer from "./components/footer/Footer";
 import { Navbar } from "./components/navbar/Navbar";
-import { InPersonTraining } from "./pages/InPersonTrainingPage/InPersonTraining";
+import { Services } from "./pages/Services/Services";
 import { Events } from "./pages/EventsPage/Events";
 import { Testimonials } from "./pages/Testimonials/Testimonials";
 import { Login } from "./pages/Login/Login";
 import { TermsAndConditions } from "./pages/TermsAndConditions/TermsAndConditions";
 import { Profile } from "./pages/Profile/Profile";
 import { Programs } from "./pages/Programs/Programs";
+import { Booking } from "./pages/Booking/Booking";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,10 +26,11 @@ const router = createBrowserRouter(
       <Route path="events" element={<Events />} />
       <Route path="programs" element={<Programs />} />
       <Route path="profile" element={<Profile />} />
-      <Route path="in-person-training" element={<InPersonTraining />} />
+      <Route path="services" element={<Services />} />
       <Route path="testimonials" element={<Testimonials />} />
       <Route path="terms" element={<TermsAndConditions />} />
       <Route path="login" element={<Login />} />
+      <Route path="booking" element={<Booking />} />
       <Route path="*" element={<HomePage />} />
     </Route>
   )

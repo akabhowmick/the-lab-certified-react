@@ -51,7 +51,7 @@ export const privateProgramList: Program[] = [
   },
   {
     coach: "Private Training",
-    tagline: "",
+    tagline: "Private Training",
     description: "1 on 1 Training",
     price: 425,
     formattedPrice: "$425",
@@ -88,7 +88,7 @@ export const privateProgramList: Program[] = [
   },
   {
     coach: "Private Training",
-    tagline: "",
+    tagline: "Private Training",
     description: "1 on 1 Training",
     price: 750,
     formattedPrice: "$750",
@@ -110,15 +110,6 @@ export const privateProgramList: Program[] = [
     description: "1 on 1 Training",
     price: 800,
     formattedPrice: "$800",
-    numberOfSessions: 20,
-    image: "",
-  },
-  {
-    coach: "Private Training",
-    tagline: "",
-    description: "1 on 1 Training",
-    price: 1300,
-    formattedPrice: "$1300",
     numberOfSessions: 20,
     image: "",
   },

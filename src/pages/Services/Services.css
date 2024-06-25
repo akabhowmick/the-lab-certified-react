@@ -1,0 +1,49 @@
+
+.WeekPicker{
+  margin-left: 10px;
+}
+
+.rs-picker-date-menu .rs-calendar-table-cell-week-number{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.rs-picker-date-menu .rs-calendar-table-row:not(.rs-calendar-table-header-row):hover .rs-calendar-table-cell-content {
+  background-color: rgba(204,233,255,.5);
+  background-color: var(--rs-listbox-option-hover-bg);
+  color: #1675e0;
+  color: var(--rs-listbox-option-hover-text);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header, .service {
+  margin-bottom: 40px;
+}
+.service img {
+  max-width: 100%;
+  height: auto;
+}
+.service-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.service-description {
+  margin-bottom: 20px;
+}
+.book-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.book-now:hover {
+  background-color: #0056b3;
+}

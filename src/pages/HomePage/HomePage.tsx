@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Hero from "./HomePageComponents/Hero";
 import Plans from "./HomePageComponents/Plans";
+import Schedules from "./HomePageComponents/Schedules";
 const App: React.FC = () => {
   const lastScrollTop = useRef(0);
   const scrollDirection = useRef<string | null>(null);
@@ -88,6 +89,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <Plans />
+        <Schedules />
       </main>
     </div>
   );

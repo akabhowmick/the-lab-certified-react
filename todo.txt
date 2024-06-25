@@ -1,12 +1,13 @@
 Frontend: (today)
 1. Programs 
   => use carousels to recreate all the programs
-  => get all the programs info
 2. Schedule - To be done with Upper Hand (?) 
 3. Navbar
   => include a dropdown 
-  => doesn't go to the pages
-4. Home Video
+4. Footer
+  => Subscription thing 
+5. Booking 
+  => coming from the calendar page 
 
 Backend: (tomorrow)
 1. Login + Auth => 
