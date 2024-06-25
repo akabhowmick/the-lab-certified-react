@@ -8,13 +8,11 @@ import { NavUnlisted } from "./NavbarStyles";
 const links = [
   { name: "Contact", path: "/contact" },
   { name: "Events", path: "/programs" },
-  { name: "Login", path: "/login" },
   { name: "Programs", path: "/programs" },
   { name: "Profile", path: "/profile" },
   { name: "Services", path: "/services" },
   { name: "Testimonials", path: "/testimonials" },
 ];
-
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);

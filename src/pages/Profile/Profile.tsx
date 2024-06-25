@@ -1,21 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface UserProfileProps {}
 
-// interface User {
-//   name: string;
-//   email: string;
-//   bio: string;
-//   avatarUrl: string;
-// }
 export const Profile: React.FC<UserProfileProps> = () => {
-  // Initialize the state with user data
-  // const [user, setUser] = React.useState<User>({
-  //   name: 'John Doe',
-  //   email: 'john.doe@example.com',
-  //   bio: 'Basketball coach with 10 years of experience. Passionate about helping players reach their full potential.',
-  //   avatarUrl: 'https://via.placeholder.com/150', // Placeholder image URL
-  // });
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!localStorage.getItem("user")) {
+      navigate("/login");
+    }
+  }, [navigate]);
 
   const user = {
     name: "John Doe",
@@ -72,4 +66,3 @@ const styles = {
     margin: "10px 0",
   },
 } as const;
-
