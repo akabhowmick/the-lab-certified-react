@@ -1,29 +1,21 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { Dropdown } from "rsuite";
 import "./Navbar.css";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavUnlisted } from "./NavbarStyles";
 
 const links = [
+  { name: "Contact", path: "/contact" },
+  { name: "Events", path: "/programs" },
   { name: "Login", path: "/login" },
   { name: "Programs", path: "/programs" },
+  { name: "Profile", path: "/profile" },
   { name: "Services", path: "/services" },
   { name: "Testimonials", path: "/testimonials" },
+  { name: "Terms and Conditions", path: "/terms" },
 ];
 
-const CustomDropdown = ({ ...props }) => (
-  <Dropdown {...props}>
-    <Dropdown.Item>Terms and Conditions</Dropdown.Item>
-    <Dropdown.Item>New File with Current Profile</Dropdown.Item>
-    <Dropdown.Item>Download As...</Dropdown.Item>
-    <Dropdown.Item>Export PDF</Dropdown.Item>
-    <Dropdown.Item>Export HTML</Dropdown.Item>
-    <Dropdown.Item>Settings</Dropdown.Item>
-    <Dropdown.Item>About</Dropdown.Item>
-  </Dropdown>
-);
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -57,13 +49,8 @@ export const Navbar = () => {
             aria-label="Larger viewport navigation menu with links"
             className="main-navbar-ul"
           >
-            <ul className="main-regular-links">
-              <CustomDropdown title="More" trigger={["click", "hover"]} />
-
-              {linksWithNavLink}
-            </ul>
             <div className="menu-icon" onClick={handleShowNavbar}>
-              <MenuIcon />
+              View Our Pages <MenuIcon />
             </div>
             {showNavbar && (
               <div className="nav-elements">
@@ -89,7 +76,7 @@ export const Navbar = () => {
           </NavUnlisted>
         </nav>
       </header>
-      <main>
+      <main className="py-16">
         <Outlet />
       </main>
     </div>

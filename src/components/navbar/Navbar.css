@@ -2,12 +2,9 @@
   width: 75px;
 }
 
-.main-regular-links {
-  display: flex;
-}
-
 .main-navbar-ul a {
   text-decoration: none;
+  text-align: end;
 }
 
 .main-navbar-ul a li {
@@ -40,8 +37,36 @@
   font-size: 1.5rem;
 }
 
-.menu-icon {
-  display: none;
+.main-navbar-ul {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav-elements {
+  right: 0;
+  top: 70px;
+  background-color: black;
+  height: calc(100vh - 60px);
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+.nav-elements ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-elements ul li {
+  margin-right: unset;
+  margin-top: 22px;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -65,40 +90,5 @@
   }
   .navbar-logo {
     width: 50px;
-  }
-  .menu-icon {
-    display: block;
-  }
-
-  .main-navbar-ul {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-  .nav-elements {
-    right: 0;
-    top: 70px;
-    background-color: black;
-    height: calc(100vh - 60px);
-    transition: all 0.3s ease-in;
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-  }
-
-  .nav-elements ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-elements ul li {
-    margin-right: unset;
-    margin-top: 22px;
-    font-size: 1.5rem;
   }
 }

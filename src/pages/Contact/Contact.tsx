@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact: React.FC = () => {
+export const Contact: React.FC = () => {
   return (
     <section id="contact">
       <div className="relative w-full h-96">
@@ -22,7 +22,10 @@ const Contact: React.FC = () => {
       </div>
       <div className="-mt-16 mb-8 px-8 ">
         <div className="container mx-auto">
-          <div className="py-12 flex justify-center rounded-xl border border-white bg-white shadow-md shadow-black/5 saturate-200">
+          <div className="py-12 px-20 flex-col justify-center rounded-xl border border-white bg-white shadow-md shadow-black/5 saturate-200">
+            <h2 className="block antialiased tracking-normal font-sans font-semibold leading-[1.3] text-black mb-4 text-3xl lg:text-4xl">
+              Contact Information
+            </h2>
             <div className="my-8 grid gap-6 px-4">
               <div className="flex items-center gap-4">
                 <svg
@@ -95,7 +98,7 @@ const Contact: React.FC = () => {
               </div>
             </div>
             <div className="py-4">
-              <form action="#">
+              <form className="p-10" action="#">
                 <div className="mb-4">
                   <div className="relative w-full h-11 !min-w-full">
                     <input
@@ -202,5 +205,3 @@ const Contact: React.FC = () => {
     </section>
   );
 };
-
-export default Contact;

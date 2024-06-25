@@ -2,8 +2,6 @@ Frontend: (today)
 1. Programs 
   => use carousels to recreate all the programs
 2. Schedule - To be done with Upper Hand (?) 
-3. Navbar
-  => include a dropdown 
 4. Footer
   => Subscription thing 
 5. Booking 
