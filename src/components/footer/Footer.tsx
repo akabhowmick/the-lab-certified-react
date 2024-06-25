@@ -1,5 +1,6 @@
 import React from "react";
 import { FooterSubscription } from "./FooterSubscription";
+import { siteLogo } from "../../utils/pictureInfo";
 
 const Footer: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <img src="public/logo.png" className="h-8 me-3" alt="FlowBite Logo" />
+              <img src={siteLogo} className="h-8 me-3" alt="The Lab Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                 The Lab
               </span>

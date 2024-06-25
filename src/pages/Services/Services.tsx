@@ -34,7 +34,6 @@ export const Services = () => {
         </div>
       </div>
       <div className="p-10 mx-auto">
-        <h4>Book Here With Us Today</h4>
         <CustomCalendar />
       </div>
     </div>
