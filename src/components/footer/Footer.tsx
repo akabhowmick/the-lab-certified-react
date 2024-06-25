@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">
+                  <a href="/programs" className="hover:underline">
                     Programs
                   </a>
                 </li>
@@ -33,12 +33,15 @@ const Footer: React.FC = () => {
               <h2 className="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://github.com/themesberg/flowbite" className="hover:underline ">
+                  <a
+                    href="https://www.facebook.com/p/The-Lab-Certified-100090320971396/?_rdr"
+                    className="hover:underline "
+                  >
                     Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
+                  <a href="https://www.instagram.com/thelab_texas/" className="hover:underline">
                     Instagram
                   </a>
                 </li>
@@ -47,13 +50,8 @@ const Footer: React.FC = () => {
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Legal</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Privacy Policy
-                  </a>
-                </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/terms" className="hover:underline">
                     Terms &amp; Conditions
                   </a>
                 </li>

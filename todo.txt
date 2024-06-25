@@ -1,20 +1,31 @@
-Frontend: 
+Frontend: (today)
 1. Programs 
   => use carousels to recreate all the programs
 2. Schedule - To be done with Upper Hand (?) 
-3. Home 
-  => fix fonts and the remove random tables 
-4. Navbar
+3. Navbar
   => include a dropdown and all the pages 
-5. Footer 
-  => replace links
-6. Testimonials + success page 
-7. Profile Page
-8. Refactor => later 
-9. Login Page
+4. Testimonials + success page => templates page
+5. Profile Page
 
-
-Backend: 
+Backend: (tomorrow)
 1. Login + Auth => Supabase with the coding email 
 2. Implement a table of events + dates for attendance 
 3. Subscription email setup
+
+
+Supabase : 
+anon eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkyODAxOTQsImV4cCI6MjAzNDg1NjE5NH0.O51bcHwBsMCn1VwpO9IoE9ZPMHgqdKMojE1UZx8UuKc
+
+service role: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxOTI4MDE5NCwiZXhwIjoyMDM0ODU2MTk0fQ.x7BT4Z8qvoBIdVF27W8_V0q6iGzTrvsFtGUhHbtLYLU
+
+
+project url : https://armuswmvcqlzahflhgoi.supabase.co
+
+api key : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkyODAxOTQsImV4cCI6MjAzNDg1NjE5NH0.O51bcHwBsMCn1VwpO9IoE9ZPMHgqdKMojE1UZx8UuKc
+
+
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://armuswmvcqlzahflhgoi.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)

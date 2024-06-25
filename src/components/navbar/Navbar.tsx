@@ -1,30 +1,29 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.png";
-// import { ButtonToolbar, Dropdown } from "rsuite";
+import { ButtonToolbar, Dropdown } from "rsuite";
 import "./Navbar.css";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavUnlisted } from "./NavbarStyles";
 
 const links = [
-  { name: "Events", path: "/events" },
-  { name: "Free Session", path: "/free-session" },
+  { name: "Login", path: "/login" },
+  { name: "Programs", path: "/programs" },
   { name: "In-Person Training", path: "/in-person-training" },
   { name: "Testimonials", path: "/testimonials" },
 ];
 
-// multi level navigation
-// const CustomDropdown = ({ ...props }) => (
-//   <Dropdown {...props}>
-//     <Dropdown.Item>New File</Dropdown.Item>
-//     <Dropdown.Item>New File with Current Profile</Dropdown.Item>
-//     <Dropdown.Item>Download As...</Dropdown.Item>
-//     <Dropdown.Item>Export PDF</Dropdown.Item>
-//     <Dropdown.Item>Export HTML</Dropdown.Item>
-//     <Dropdown.Item>Settings</Dropdown.Item>
-//     <Dropdown.Item>About</Dropdown.Item>
-//   </Dropdown>
-// );
+const CustomDropdown = ({ ...props }) => (
+  <Dropdown {...props}>
+    <Dropdown.Item>Terms and Conditions</Dropdown.Item>
+    <Dropdown.Item>New File with Current Profile</Dropdown.Item>
+    <Dropdown.Item>Download As...</Dropdown.Item>
+    <Dropdown.Item>Export PDF</Dropdown.Item>
+    <Dropdown.Item>Export HTML</Dropdown.Item>
+    <Dropdown.Item>Settings</Dropdown.Item>
+    <Dropdown.Item>About</Dropdown.Item>
+  </Dropdown>
+);
 
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -58,7 +57,12 @@ export const Navbar = () => {
             aria-label="Larger viewport navigation menu with links"
             className="main-navbar-ul"
           >
-            <ul className="main-regular-links">{linksWithNavLink}</ul>
+            <ul className="main-regular-links">
+              <ButtonToolbar>
+                <CustomDropdown title="More" trigger={["click", "hover"]} />
+              </ButtonToolbar>
+              {linksWithNavLink}
+            </ul>
             <div className="menu-icon" onClick={handleShowNavbar}>
               <MenuIcon />
             </div>
@@ -67,9 +71,6 @@ export const Navbar = () => {
                 <ul>{linksWithNavLink}</ul>
               </div>
             )}
-            {/* <ButtonToolbar>
-              <CustomDropdown title="Click and Hover" trigger={["click", "hover"]} />
-            </ButtonToolbar> */}
 
             <NavLink
               onClick={() => setShowNavbar(false)}

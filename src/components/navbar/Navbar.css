@@ -12,7 +12,7 @@
 
 .main-navbar-ul a li {
   color: var(--dark-red);
-  font-size: 1.3rem;
+  font-size: 1rem;
   position: relative;
   list-style: none;
   font-weight: 600;
@@ -37,7 +37,7 @@
 }
 
 #logo-with-title h2 {
-  color: var(--dark-red);
+  font-size: 1.5rem;
 }
 
 .menu-icon {
@@ -81,7 +81,7 @@
   .nav-elements {
     right: 0;
     top: 70px;
-    background-color: var(--light-red);
+    background-color: black;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;

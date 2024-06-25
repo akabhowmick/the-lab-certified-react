@@ -4,7 +4,7 @@ export const NavUnlisted = styled.ul`
   align-items: center;
   background-color: black;
   margin: 0 0 -5px;
-  padding: 1rem;
+  padding: 10px;
   flex-direction: row-reverse;
   justify-content: space-between;
   .active {
