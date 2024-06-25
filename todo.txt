@@ -1,10 +1,6 @@
 Frontend: (today)
-1. Programs 
-  => use carousels to recreate all the programs
-2. Schedule - To be done with Upper Hand (?) 
-4. Footer
-  => Subscription thing 
-5. Booking 
+1. Schedule - To be done with Upper Hand (?) 
+2. Booking 
   => coming from the calendar page 
 
 Backend: (tomorrow)

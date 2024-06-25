@@ -1,4 +1,5 @@
 import React from "react";
+import { FooterSubscription } from "./FooterSubscription";
 
 const Footer: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Footer: React.FC = () => {
                 The Lab
               </span>
             </a>
+            <FooterSubscription />
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
