@@ -93,7 +93,7 @@ export const Login = () => {
                   href="/signup"
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
-                  Log in
+                  Sign up now!
                 </a>
               </p>
             </form>
