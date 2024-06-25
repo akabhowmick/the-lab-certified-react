@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { ButtonToolbar, Dropdown } from "rsuite";
+import { Dropdown } from "rsuite";
 import "./Navbar.css";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -58,9 +58,8 @@ export const Navbar = () => {
             className="main-navbar-ul"
           >
             <ul className="main-regular-links">
-              <ButtonToolbar>
-                <CustomDropdown title="More" trigger={["click", "hover"]} />
-              </ButtonToolbar>
+              <CustomDropdown title="More" trigger={["click", "hover"]} />
+
               {linksWithNavLink}
             </ul>
             <div className="menu-icon" onClick={handleShowNavbar}>
