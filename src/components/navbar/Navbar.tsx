@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavUnlisted } from "./NavbarStyles";
 
 const links = [
+  { name: "Home", path: "/" },
   { name: "Contact", path: "/contact" },
   { name: "Events", path: "/programs" },
   { name: "Programs", path: "/programs" },
