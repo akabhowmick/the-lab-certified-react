@@ -1,4 +1,5 @@
 import { Program } from "../../types/interfaces";
+import { siteLogo } from "../../utils/pictureInfo";
 
 export const ProgramCard = ({ program }: { program: Program }) => {
   const { coach, tagline, description, formattedPrice, numberOfSessions, image } = program;
@@ -11,7 +12,7 @@ export const ProgramCard = ({ program }: { program: Program }) => {
     <div className="flex items-center justify-center">
       <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
         <a href="#">
-          <img src={image === "" ? "src/assets/logo.png" : image} alt="program-pic" />
+          <img src={image === "" ? siteLogo : image} alt="program-pic" />
           <div className="px-4 py-3 w-72">
             <div className="border-b">
               <p className="text-lg font-bold text-black truncate block capitalize whitespace-normal">

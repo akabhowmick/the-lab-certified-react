@@ -1,24 +1,5 @@
-Frontend: (today)
-1. Schedule - To be done with Upper Hand (?) 
-
 Backend: (tomorrow)
 1. Login + Auth => 
 2. Implement a table of events + dates for attendance 
-3. Subscription email setup
 
-Supabase : 
-anon eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkyODAxOTQsImV4cCI6MjAzNDg1NjE5NH0.O51bcHwBsMCn1VwpO9IoE9ZPMHgqdKMojE1UZx8UuKc
-
-service role: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxOTI4MDE5NCwiZXhwIjoyMDM0ODU2MTk0fQ.x7BT4Z8qvoBIdVF27W8_V0q6iGzTrvsFtGUhHbtLYLU
-
-
-project url : https://armuswmvcqlzahflhgoi.supabase.co
-
-api key : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFybXVzd212Y3FsemFoZmxoZ29pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkyODAxOTQsImV4cCI6MjAzNDg1NjE5NH0.O51bcHwBsMCn1VwpO9IoE9ZPMHgqdKMojE1UZx8UuKc
-
-
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'https://armuswmvcqlzahflhgoi.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
+Better Pictures 

@@ -1,3 +1,5 @@
+import { siteLogo } from "../../utils/pictureInfo";
+
 export const Booking = () => {
   return (
     <div>
@@ -14,7 +16,7 @@ export const Booking = () => {
             <div className="flex flex-col rounded-lg bg-white sm:flex-row">
               <img
                 className="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                src="src/assets/logo.png"
+                src={siteLogo}
                 alt=""
               />
               <div className="flex w-full flex-col px-4 py-4">
