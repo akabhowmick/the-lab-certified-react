@@ -1,13 +1,15 @@
 Frontend: (today)
 1. Programs 
   => use carousels to recreate all the programs
+  => get all the programs info
 2. Schedule - To be done with Upper Hand (?) 
 3. Navbar
-  => include a dropdown and all the pages 
-4. Testimonials + success page => templates page
+  => include a dropdown 
+  => doesn't go to the pages
+4. Home Video
 
 Backend: (tomorrow)
-1. Login + Auth => Supabase with the coding email 
+1. Login + Auth => 
 2. Implement a table of events + dates for attendance 
 3. Subscription email setup
 

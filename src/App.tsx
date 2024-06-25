@@ -14,9 +14,9 @@ import { InPersonTraining } from "./pages/InPersonTrainingPage/InPersonTraining"
 import { Events } from "./pages/EventsPage/Events";
 import { Testimonials } from "./pages/Testimonials/Testimonials";
 import { Login } from "./pages/Login/Login";
-import { Programs } from "./pages/Programs/Programs";
 import { TermsAndConditions } from "./pages/TermsAndConditions/TermsAndConditions";
 import { Profile } from "./pages/Profile/Profile";
+import { Programs } from "./pages/Programs/Programs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
